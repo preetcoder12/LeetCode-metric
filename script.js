@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     async function fetchUserDetails(username) {
         const URL = `https://leetcode-stats-api.herokuapp.com/${username}`;
         try {
-            searchButton.textContent = "Searching...";
+            searchButton.textContent = "Searching";
             searchButton.disabled = true;
             const response = await fetch(URL);
             if (!response.ok) {
